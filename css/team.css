@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --primary-color: #30343F;
+  --secondary-color: #96705B;
+  --tertiary-color: #7AA095;
+  --quaternary-color: #523500;
+}
+
+html {
+  background: #05005c;
+  background: linear-gradient(142deg, #05005c 0%, #96705b 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.contain {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+img.logo {
+  width: 5em;
+  position: block;
+  margin: auto;
+}
+
+.navbar {
+  padding: 3em 0 2em 0;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.navbar .logo span {
+  font-size: 1.3rem;
+  color: #619be2;
+}
+
+.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: none;
+  position: unset;
+  height: auto;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.navbar nav a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: .1em 1em;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  font-weight: bold;
+}
+
+.navbar nav a:current {
+  color: #7AA095;
+}
+
+.navbar nav li.sign-up-nav a {
+  padding-left: 1em;
+  color: white;
+  border: 3px solid white;
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -.2em;
+}
+
+.navbar nav li.sign-up-nav a:hover {
+  background: white;
+  color: var(--tertiary-color);
+}
+
+.navbar .container {
+  width: 1080px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  color: white;
+  padding-top: 5em;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 80px;
+}
+
+.profile {
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0em;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row .title {
+  padding-left: 5em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.profile .profile-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.profile:hover {
+  padding-bottom: 5em;
+}
+
+.profile:hover h4 {
+  color: var(--tertiary-color);
+}
+
+.profile:hover h5 {
+  opacity: 1;
+}
+
+.profile:hover p {
+  opacity: 1;
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h4 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: white;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+.profile p {
+  font-size: 1rem;
+  margin-top: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+.progress-section {
+  position: fixed;
+  right: 50px;
+  top: 40%;
+  width: 60px;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  will-change: transform;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.progress-bar-wrap {
+  position: relative;
+  width: 1px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: white;
+}
+/*# sourceMappingURL=team.css.map */
