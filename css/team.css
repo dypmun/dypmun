@@ -211,7 +211,7 @@ ul {
 }
 
 .profile h5 {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: 3px;
   color: #ccc;
@@ -220,8 +220,14 @@ ul {
   opacity: 0;
 }
 
+.profile h5 a {
+  text-decoration: none;
+  color: #ccc;
+}
+
 .profile p {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
   margin-top: 20px;
   -webkit-transition: 400ms;
   transition: 400ms;
