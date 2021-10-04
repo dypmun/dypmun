@@ -15,15 +15,21 @@ html {
     font-family: Montserrat;
 }
 
-img.logo {
-    width: 5em;
-    position: block;
-    margin: auto;
+.container {
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .container {
     width: 1080px;
     margin: 0 auto;
+}
+
+img.logo {
+    width: 4em;
+    position: block;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -49,6 +55,7 @@ img.logo {
         width: 100%;
         padding-left: 3em;
         padding-right: 0;
+        padding-bottom: 2em;
         ul {
             display: flex;
             margin-top: 2em;
@@ -80,9 +87,9 @@ img.logo {
         }
     }
     .container {
-        display: grid;
+        display: flex;
         grid-template-columns: 180px auto;
-        justify-content: unset;
+        justify-content: space-evenly;
     }
 }
 
@@ -115,4 +122,8 @@ h3 {
     font-size: 2rem;
     color: white;
     font-weight: 400;
+}
+
+a {
+    text-decoration: none;
 }

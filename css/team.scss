@@ -21,9 +21,15 @@ html {
 }
 
 img.logo {
-    width: 5em;
+    width: 4em;
     position: block;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -47,8 +53,9 @@ img.logo {
         position: unset;
         height: auto;
         width: 100%;
-        padding-left: 1em;
+        padding-left: 3em;
         padding-right: 0;
+        padding-bottom: 2em;
         ul {
             display: flex;
             margin-top: 2em;
@@ -80,11 +87,9 @@ img.logo {
         }
     }
     .container {
-        width: 1080px;
-        margin: 0 auto;
-        display: grid;
+        display: flex;
         grid-template-columns: 180px auto;
-        justify-content: unset;
+        justify-content: space-evenly;
     }
 }
 
@@ -185,7 +190,7 @@ ul {
 }
 
 .profile p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     margin-top: 20px;
     transition: 400ms;

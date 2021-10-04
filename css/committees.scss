@@ -18,12 +18,37 @@ html {
 .contain {
     width: 1080px;
     margin: 0 auto;
+    .header {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 5em;
+        img {
+            padding-left: 2em;
+            padding-right: 2em;
+            width: 20em;
+        }
+        img.reflect {
+            transform: scaleX(-1);
+            padding-left: 2em;
+            padding-right: 2em;
+            width: 20em;
+        }
+        h1 {
+            padding-top: 1em;
+        }
+    }
 }
 
 img.logo {
-    width: 5em;
+    width: 4em;
     position: block;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -47,8 +72,9 @@ img.logo {
         position: unset;
         height: auto;
         width: 100%;
-        padding-left: 1em;
+        padding-left: 3em;
         padding-right: 0;
+        padding-bottom: 2em;
         ul {
             display: flex;
             margin-top: 2em;
@@ -80,11 +106,9 @@ img.logo {
         }
     }
     .container {
-        width: 1080px;
-        margin: 0 auto;
-        display: grid;
+        display: flex;
         grid-template-columns: 180px auto;
-        justify-content: unset;
+        justify-content: space-evenly;
     }
 }
 

@@ -21,9 +21,10 @@ img.heroimg {
 }
 
 img.logo {
-    width: 5em;
+    width: 4em;
     position: block;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -58,6 +59,7 @@ h1 {
         width: 100%;
         padding-left: 3em;
         padding-right: 0;
+        padding-bottom: 2em;
         ul {
             display: flex;
             margin-top: 2em;
@@ -89,9 +91,9 @@ h1 {
         }
     }
     .container {
-        display: grid;
+        display: flex;
         grid-template-columns: 180px auto;
-        justify-content: unset;
+        justify-content: space-evenly;
     }
 }
 
