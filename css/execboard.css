@@ -20,33 +20,6 @@ html {
   margin: 0 auto;
 }
 
-.contain .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 5em;
-}
-
-.contain .header img {
-  padding-left: 2em;
-  padding-right: 2em;
-  width: 20em;
-}
-
-.contain .header img.reflect {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  padding-left: 2em;
-  padding-right: 2em;
-  width: 20em;
-}
-
-.contain .header h1 {
-  padding-top: 1em;
-}
-
 img.logo {
   width: 4em;
   position: block;
@@ -55,7 +28,7 @@ img.logo {
 }
 
 .container {
-  width: 1080px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -86,8 +59,6 @@ img.logo {
   background: none;
   position: unset;
   height: auto;
-  width: 100%;
-  padding-left: 4em;
   padding-right: 0;
   padding-bottom: 2em;
 }
@@ -146,39 +117,28 @@ ul {
   padding: 0;
 }
 
-h1 {
-  font-size: 5rem;
-  text-align: center;
+.contain {
   color: white;
-  font-weight: 500;
+  padding-top: 5em;
 }
 
-h2 {
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.contain h2 {
   font-size: 4rem;
-  color: white;
-  font-weight: 600;
-}
-
-h2 span {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #a6dccc;
-  opacity: 0;
-  -webkit-transition: 400ms;
-  transition: 400ms;
-}
-
-h4 {
-  font-size: 2rem;
-  color: white;
   font-weight: 400;
-  padding-bottom: 0;
+  color: var(--tertiary-color);
 }
 
-.committees {
+.profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,34 +148,126 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px 80px;
 }
 
-.committees .container1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.profile {
   -ms-flex-preferred-size: 260px;
       flex-basis: 260px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10em;
+  padding-bottom: 0em;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
-.committees .container1:hover p {
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row .title {
+  padding-left: 5em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.profile .profile-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.profile:hover {
+  padding-bottom: 5em;
+}
+
+.profile:hover h4 {
+  color: var(--tertiary-color);
+}
+
+.profile:hover h5 {
   opacity: 1;
 }
 
-.committees .container1 img {
-  width: 25em;
+.profile:hover p {
+  opacity: 1;
 }
 
-.committees .container1 .content1 {
-  padding-left: 5em;
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
 }
 
-.committees .container1 .content2 {
-  padding-right: 5em;
+.profile h4 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: white;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.profile h5 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+.profile h5 a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
 }
 
 .progress-section {
@@ -247,7 +299,7 @@ h4 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3%;
+  height: 0%;
   background-color: white;
 }
-/*# sourceMappingURL=committees.css.map */
+/*# sourceMappingURL=execboard.css.map */
