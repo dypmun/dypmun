@@ -32,6 +32,11 @@ img.logo {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar {
   padding: 3em 0 2em 0;
 }
@@ -123,13 +128,19 @@ ul {
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 3.5rem;
   color: white;
 }
 
-.heading span {
-  font-style: italic;
-  font-size: 30px;
+.heading a {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  color: white;
+}
+
+.heading:hover a {
+  color: var(--tertiary-color);
+  text-decoration: underline;
 }
 
 .profiles {
