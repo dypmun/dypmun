@@ -117,6 +117,7 @@ ul {
         font-size: 4rem;
         font-weight: 400;
         color: var(--tertiary-color);
+        padding-top: 2em;
     }
 }
 
@@ -130,6 +131,7 @@ ul {
 .profile {
     flex-basis: 260px;
     align-items: center;
+    padding-top: 5em;
     padding-bottom: 0em;
     transition: 400ms;
 }
@@ -157,6 +159,7 @@ ul {
 }
 
 .profile:hover {
+    display: block;
     padding-bottom: 5em;
     h4 {
         color: var(--tertiary-color);
@@ -166,6 +169,7 @@ ul {
     }
     p {
         opacity: 1;
+        display: block;
     }
 }
 
@@ -199,8 +203,9 @@ ul {
     font-size: 1.2rem;
     line-height: 2rem;
     margin-top: 20px;
-    transition: 400ms;
+    transition: 1s;
     opacity: 0;
+    display: none;
 }
 
 @media only screen and (max-width: 1150px) {
