@@ -84,10 +84,6 @@ a {
 }
 
 .navbar nav a:hover {
-  font-weight: bold;
-}
-
-.navbar nav a:current {
   color: #7AA095;
 }
 
@@ -162,7 +158,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 0em;
+  padding-bottom: 2em;
   -webkit-transition: 400ms;
   transition: 400ms;
 }
@@ -195,6 +191,12 @@ ul {
           filter: grayscale(0);
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #7AA095;
+}
+
 .profile:hover {
   padding-bottom: 5em;
 }
@@ -208,6 +210,7 @@ ul {
 }
 
 .profile:hover p {
+  display: block;
   opacity: 1;
 }
 
@@ -247,6 +250,7 @@ ul {
   -webkit-transition: 400ms;
   transition: 400ms;
   opacity: 0;
+  display: none;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -354,9 +358,6 @@ ul {
     text-decoration: none;
   }
   .navbar nav a:hover {
-    font-weight: bold;
-  }
-  .navbar nav a:current {
     color: #7AA095;
   }
   .navbar nav li.sign-up-nav a {

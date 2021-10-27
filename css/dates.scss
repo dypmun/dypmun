@@ -77,9 +77,6 @@ img.logo {
             padding: .1em 1em;
             text-decoration: none;
             &:hover {
-                font-weight: bold;
-            }
-            &:current {
                 color: #7AA095;
             }
         }
@@ -171,9 +168,6 @@ ul {
                 padding: .1em 1em;
                 text-decoration: none;
                 &:hover {
-                    font-weight: bold;
-                }
-                &:current {
                     color: #7AA095;
                 }
             }

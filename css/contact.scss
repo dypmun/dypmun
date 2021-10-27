@@ -65,9 +65,6 @@ img.logo {
             padding: .1em 1em;
             text-decoration: none;
             &:hover {
-                font-weight: bold;
-            }
-            &:current {
                 color: #7AA095;
             }
         }
@@ -170,9 +167,6 @@ a {
                 padding: .1em 1em;
                 text-decoration: none;
                 &:hover {
-                    font-weight: bold;
-                }
-                &:current {
                     color: #7AA095;
                 }
             }

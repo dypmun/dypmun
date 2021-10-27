@@ -70,9 +70,6 @@ a {
             padding: .1em 1em;
             text-decoration: none;
             &:hover {
-                font-weight: bold;
-            }
-            &:current {
                 color: #7AA095;
             }
         }
@@ -134,7 +131,7 @@ ul {
 .profile {
     flex-basis: 260px;
     align-items: center;
-    padding-bottom: 0em;
+    padding-bottom: 2em;
     transition: 400ms;
 }
 
@@ -160,6 +157,12 @@ ul {
     filter: grayscale(0);
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #7AA095;
+}
+
 .profile:hover {
     padding-bottom: 5em;
     h4 {
@@ -169,6 +172,7 @@ ul {
         opacity: 1;
     }
     p {
+        display: block;
         opacity: 1;
     }
 }
@@ -205,6 +209,7 @@ ul {
     margin-top: 20px;
     transition: 400ms;
     opacity: 0;
+    display: none;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -289,9 +294,6 @@ ul {
                 padding: .1em 1em;
                 text-decoration: none;
                 &:hover {
-                    font-weight: bold;
-                }
-                &:current {
                     color: #7AA095;
                 }
             }

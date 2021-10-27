@@ -106,10 +106,6 @@ img.logo {
 }
 
 .navbar nav a:hover {
-  font-weight: bold;
-}
-
-.navbar nav a:current {
   color: #7AA095;
 }
 
@@ -295,9 +291,6 @@ h4 {
     text-decoration: none;
   }
   .navbar nav a:hover {
-    font-weight: bold;
-  }
-  .navbar nav a:current {
     color: #7AA095;
   }
   .navbar nav li.sign-up-nav a {
